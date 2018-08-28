@@ -11,11 +11,6 @@ package com.example.sql.dto
 
 import javax.persistence.*
 
-/**
- * User: Prakash
- * Date: 7/14/2017
- * Time: 2:42 PM
- */
 @MappedSuperclass
 abstract class BaseDTO implements Serializable {
 

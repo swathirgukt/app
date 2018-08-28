@@ -22,7 +22,6 @@ class SqlApplicationTestDao {
 
     @Test
     void checkRepo() {
-       log.warn( "***************** IE: " + cashBackAirlineRepository.findCashBackAirlineByActiveTrueAndCompanyId(1).size())
        log.warn( "***************** EG: " + cashBackAirlineRepository.findCashBackAirlineByActiveTrueAndCompanyId(2).size())
 
     }

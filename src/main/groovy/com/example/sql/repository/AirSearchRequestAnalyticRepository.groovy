@@ -12,11 +12,6 @@ import com.example.sql.dto.AirSearchRequestAnalytic
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
 
-/**
- * User: Prakash 
- * Date: 7/14/2017
- * Time: 3:35 PM
- */
 interface AirSearchRequestAnalyticRepository extends JpaRepository<AirSearchRequestAnalytic, Long> {
 
     @Query("select count(*), origin, destination,originCountryCode,destinationCountryCode from AirSearchRequestAnalytic where requestDate between ?1 and ?2 group by origin, destination")

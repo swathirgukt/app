@@ -12,11 +12,6 @@ package com.example.sql.dto
 import javax.persistence.Column
 import javax.persistence.MappedSuperclass
 
-/**
- * User: Prakash
- * Date: 7/14/2017
- * Time: 2:42 PM
- */
 @MappedSuperclass
 class CompanyIdDTO extends BaseDTO {
 
